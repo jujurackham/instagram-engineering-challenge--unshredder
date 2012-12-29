@@ -23,7 +23,7 @@ function U = unshred(Im)
     
     % Computes the slices width and number
     slW = [slices 0] - [0 slices];
-    slW = median(slW(2:end-1));
+    slW = mode(slW(2:end-1));
     disp(['Found the width of slices : ' num2str(slW) 'px.']);
     slN = round(d/slW);
     disp(['Number of slices : ' num2str(slN) '.']);
