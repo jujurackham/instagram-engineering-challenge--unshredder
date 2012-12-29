@@ -1,32 +1,19 @@
-■requirements
-・Ruby 1.9.2
-・RMagick 2.13.1
+Instagram Engineering Challenge: The Unshredder
 
-■usage
-typing command as follows. 
-$ ruby unshredder.rb [Shredded image filename]
+GUIDELINES
 
-creating an unshredded image at the same directory.
+1) Choose a scripting language of your choice. We chose Python for its relative ease prototyping and availability of the Python Imaging Library (PIL) that allowed us to do the image stuff we wanted to do. You can easily use something like C++ or Ruby for this as well.
+2) Produce a script that reads in a shredded image (like the one below) and produces the original image. For this image, you can assume shreds are 32 pixels wide and uniformly spaced across the image horizontally. These shreds are scattered at random and if rearranged, will yield the original image.
+3) Your solution should algorithmically unshred the image. This means it should work on arbitrarily shredded images we feed your script that are shredded in the same manner.
+4) BONUS CHALLENGE: We went the extra mile and made our script even spiffier by auto-detecting how wide the uniform strips are. Extra bonus points to anyone who works this into their solution. But first, we’d recommend getting your script to work assuming 32 pixel-wide shreds. For this you can assume shreds will never end up next to each other correctly in the source image.
 
-ex)
-ruby unshredder.rb TokyoPanoramaShredded.png
--> TokyoPanoramaShredded_unshredded.png
 
-■source of the shredded images
-I got shredded images from the following sites.
+■ Requirements
+・ Matlab R2011a or higher
+・ Octave should work as well...
 
-http://instagram-engineering.tumblr.com/post/12651721845/instagram-engineering-challenge-the-unshredder
-・TokyoPanoramaShredded.png
+■ Usage
+./unshredder.sh [Shredded image filename]
 
-http://www.vinceallen.com/processing/unshred/
-・mountains64.jpg
-・beach4.jpg
-・bunnies8.jpg
-・kitchen16.jpg
-・kitties32.jpg
-・tree40.jpg
-
-https://github.com/timruffles/image-deshredder/tree/gh-pages/img
-・shredded-one.jpg
-・shredded-two.jpg
-・shredded-three.jpg
+■ Source of the shredded images
+・ See the original repo : yolatengo8888/instagram-engineering-challenge--unshredder
