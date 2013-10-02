@@ -8,7 +8,7 @@ then
 else
     if [ -f $1 ]
     then
-        matlab -nodesktop -nosplash -r "unshred('$1');"
+        octave --eval "unshred('$1');"
     else
         echo "File doesn't exist"
     fi

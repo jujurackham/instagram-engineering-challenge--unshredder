@@ -66,11 +66,11 @@ function U = unshred(Im)
     for k=1:slN
         img_unshd = [img_unshd get_slice(img, slW, vec(k))];
     end
-    [~, output, ext] = fileparts(Im);
+    [d, output, ext] = fileparts(Im);
     output = [output '_unshredded' ext];
     imwrite(img_unshd, output);
     disp(['Image saved to' output '.']);
-    disp('Press any key to exit...');
-    pause;
+    %disp('Press any key to exit...');
+    %pause;
     exit;
 end

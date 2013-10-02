@@ -9,11 +9,10 @@ GUIDELINES
 
 
 ■ Requirements
-・ Matlab R2011a or higher
-・ Octave should work as well...
+・ Octave 3 or higher
 
 ■ Usage
-./unshredder.sh [Shredded image filename]
+./unshredder.sh [shredded image filename]
 
 ■ Source of the shredded images
 ・ See the original repo : yolatengo8888/instagram-engineering-challenge--unshredder
